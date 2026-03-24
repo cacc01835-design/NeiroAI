@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>НейроИИ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>НейроИИ</h1>
+            <p>Задавайте любой вопрос — я помогу!</p>
+        </div>
+
+        <!-- Форма ввода имени -->
+        <div class="name-input-section">
+            <input type="text" id="userNameInput" placeholder="Введите ваше имя" maxlength="30">
+            <button id="submitName">Начать общение</button>
+        </div>
+
+        <!-- Уведомления системы -->
+        <div id="system-notifications" class="system-notifications"></div>
+
+        <!-- Область чата -->
+        <div id="chat-messages" class="chat-messages">
+            <!-- Сообщения будут добавляться здесь -->
+        </div>
+
+        <!-- Индикатор «печатает...» -->
+        <div id="typing-indicator" class="typing-indicator" style="display: none;">
+            <span>НейроИИ печатает</span>
+            <div class="typing-dots">
+                <span class="typing-dot"></span>
+                <span class="typing-dot"></span>
+                <span class="typing-dot"></span>
+            </div>
+        </div>
+
+        <!-- Поле ввода сообщения -->
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Напишите ваше сообщение..." disabled>
+            <button id="send-btn" disabled>Отправить</button>
+        </div>
+
+        <!-- Кнопка выхода -->
+        <button class="logout-btn" style="display: none;">Выйти из чата</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
